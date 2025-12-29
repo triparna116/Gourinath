@@ -1,14 +1,14 @@
 "use client";
 import { useState } from 'react';
 
-// ১. তোমার বলা ক্রমানুসারে ডেটা সাজানো হয়েছে
+// ১. তোমার বলা ক্রমানুসারে (Sonakto, Postmaster, Mahanayak, Iti Binodini) সাজানো হয়েছে
 export const worksData = [
     {
-        id: "1",
-        year: "2024",
-        title: "ITI BINODINI",
-        desc: "A story of the renowned actress who was famous for dramas in early ages",
-        synopsis: "This drama depicts the tragic yet inspiring life of Binodini Dasi, the first star of the Bengali stage. It highlights her dedication to theatre and the societal challenges she faced."
+        id: "4",
+        year: "2005",
+        title: "SONAKTO",
+        desc: "A story of a ghost scripted in comedy",
+        synopsis: "Full synopsis: A hilarious story of a ghost who visits a family and becomes their daily chaos, a hilarious take on the supernatural world. This comedy classic has been one of the most loved productions of Theatre-Place."
     },
     {
         id: "2",
@@ -25,11 +25,11 @@ export const worksData = [
         synopsis: "Full synopsis: This play explores the journey of the greatest star of Bengali cinema, Uttam Kumar, his struggles, and his legendary rise to fame. Directed by Gourinath Banerjee, it captures the golden era of cinema."
     },
     {
-        id: "4",
-        year: "2005",
-        title: "SONAKTO",
-        desc: "A story of a ghost scripted in comedy",
-        synopsis: "Full synopsis: A hilarious story of a ghost who visits a family and becomes their daily chaos, a hilarious take on the supernatural world. This comedy classic has been one of the most loved productions of Theatre-Place."
+        id: "1",
+        year: "2024",
+        title: "ITI BINODINI",
+        desc: "A story of the renowned actress who was famous for dramas in early ages",
+        synopsis: "This drama depicts the tragic yet inspiring life of Binodini Dasi, the first star of the Bengali stage. It highlights her dedication to theatre and the societal challenges she faced."
     }
 ];
 
@@ -95,7 +95,7 @@ export default function WorksPage() {
                                 marginTop: '15px',
                                 padding: '15px',
                                 backgroundColor: '#111',
-                                borderLeft: '3px solid ${gold}',
+                                borderLeft: `3px solid ${gold}`,// এখানে ব্যাকটিকস ব্যবহার করা হয়েছে কালার কাজ করানোর জন্য
                             }}>
                                 <h4 style={{ color: gold, marginBottom: '8px', fontSize: '1rem' }}>Synopsis:</h4>
                                 <p style={{ color: '#eee', lineHeight: '1.5', fontSize: '0.95rem' }}>

@@ -20,7 +20,7 @@ export default function AboutPage() {
             <section style={{ maxWidth: '1100px', margin: '0 auto', padding: '0 20px 100px' }}>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '50px', alignItems: 'flex-start' }}>
 
-                    {/* IMAGE BOX - সংশোধিত অংশ */}
+                    {/* IMAGE BOX - Unchanged */}
                     <div style={{ flex: '1', minWidth: '300px' }}>
                         <div style={{
                             border: `1px solid ${gold}`,
@@ -33,10 +33,10 @@ export default function AboutPage() {
                                 alt="Gourinath Banerjee"
                                 style={{
                                     width: '100%',
-                                    height: 'auto', // কমা যোগ করা হয়েছে
+                                    height: 'auto',
                                     display: 'block',
                                     borderRadius: '10px',
-                                    objectPosition: 'top', // এটি মাথা কাটা রোধ করবে
+                                    objectPosition: 'top',
                                 }}
                             />
                         </div>
@@ -48,7 +48,7 @@ export default function AboutPage() {
                         <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: grayText }}>
                             I am Gourinath Banerjee, a veteran of the stage and screen.
                             Since founding my drama group in 1976, my life has been dedicated to the art of performance.
-                            I believe that theatre is the most powerful way to reflect the human condition.
+                            I have written and directed over *40+ drama productions* under the banner of *Theatre-Place*, believing that theatre is the most powerful way to reflect the human condition.
                         </p>
 
                         <h3 style={{ color: gold, marginTop: '30px' }}>What I Do</h3>
@@ -56,17 +56,20 @@ export default function AboutPage() {
                             <li>🎭 <strong>Acting:</strong> Theatre, Cinema, and Web Series.</li>
                             <li>✍️ <strong>Writing:</strong> Script development and storytelling.</li>
                             <li>🎓 <strong>Teaching:</strong> Guiding the next generation of actors.</li>
+                            {/* কাকার ইনস্ট্রাকশন অনুযায়ী Direction যোগ করা হলো */}
+                            <li>🎬 <strong>Direction:</strong> Leading 40+ stage productions for Theatre-Place.</li>
                         </ul>
 
-                        {/* সিনেম্যাটিক কোট */}
+                        {/* সিনেম্যাটিক কোট - Unchanged */}
                         <div style={{ marginTop: '40px', paddingLeft: '20px', borderLeft: `4px solid ${gold}`, fontStyle: 'italic' }}>
                             <p style={{ color: '#eee', fontSize: '1.2rem' }}>
                                 "Theatre is not just a performance; it's the heartbeat of human experience."
                             </p>
                         </div>
                     </div>
-                    {/* 3. PERFORMANCE VIDEO SECTION */}
-                    <section style={{ maxWidth: '1100px', margin: '40px auto 100px', padding: '0 20px' }}>
+
+                    {/* 3. PERFORMANCE VIDEO SECTION - Unchanged */}
+                    <section style={{ maxWidth: '1100px', margin: '40px auto 100px', padding: '0 20px', width: '100%' }}>
                         <div style={{ textAlign: 'center', marginBottom: '30px' }}>
                             <h2 style={{ color: '#FFB100', fontSize: '2rem' }}>Performance Highlights</h2>
                             <div style={{ width: '60px', height: '2px', backgroundColor: '#FFB100', margin: '15px auto' }}></div>

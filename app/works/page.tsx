@@ -11,6 +11,21 @@ export const worksData = [
         synopsis: "Full synopsis: A hilarious story of a ghost who visits a family and becomes their daily chaos, a hilarious take on the supernatural world. This comedy classic has been one of the most loved productions of Theatre-Place."
     },
     {
+        id: "5",
+        year: "2006",
+        title: "Oshompurno",
+        desc: "A story of a unouch on stage",
+        synopsis: "Full synopsis : It is the story of the struggles and life of a unouch and concluding to their soft emotions and hardships"
+    },
+    {
+        id: "6",
+        year: "2008",
+        title: "Hotat Nayok",
+        desc: "The story of a young boy who dreamt to be an actor",
+        synopsis: "Full synopsis : It is the story of the life of a young boy who dreamt to be an actor and it is scripted in drama on stage in a comedy mood but finally becoming a famous actor fulfilling his dream"
+    },
+
+    {
         id: "2",
         year: "2013",
         title: "POSTMASTER",
@@ -24,6 +39,14 @@ export const worksData = [
         desc: "The description about the life of the legendary and most known actor in image of Uttam Kumar.",
         synopsis: "Full synopsis: This play explores the journey of the greatest star of Bengali cinema, Uttam Kumar, his struggles, and his legendary rise to fame. Directed by Gourinath Banerjee, it captures the golden era of cinema."
     },
+    {
+        id: "9",
+        year: "2023",
+        title: "Bishorjoner Baddi",
+        desc: "The story of a poor and innocent girl concluding to her most saddest tragedy",
+        synopsis: "Full synopsis: This play explores the journey of a poor and innocent girl concluding to her most saddest tragedy who got murdered by a very wicked villager directing only her life struggles"
+    },
+
     {
         id: "1",
         year: "2024",

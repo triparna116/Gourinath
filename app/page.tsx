@@ -13,10 +13,10 @@ export default function HomePage() {
       minHeight: '100vh',
       fontFamily: 'sans-serif',
       width: '100%',
-      overflowX: 'hidden' // এটি নিশ্চিত করবে যে কোনো কিছুই সাইডে স্ক্রল হবে না
+      overflowX: 'hidden'
     }}>
 
-      {/* 1. CINEMATIC HERO SECTION (আপডেট করা হয়েছে) */}
+      {/* 1. CINEMATIC HERO SECTION */}
       <section style={{
         height: '90vh',
         display: 'flex',
@@ -26,16 +26,13 @@ export default function HomePage() {
         backgroundImage: 'linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("/g1.jpg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        borderBottom: '4px solid ${gold}',
-        padding: '0 15px', // মোবাইলের জন্য সাইডে প্যাডিং
+        borderBottom: `4px solid ${gold}`, // এখানে ভেরিয়েবল ঠিক করা হয়েছে
+        padding: '0 15px',
         boxSizing: 'border-box'
       }}>
         <div style={{ maxWidth: '900px', width: '100%' }}>
-
-          {/* কাকার কথামতো লোগো এবং থিয়েটার প্লেস নাম এখান থেকে ডিলিট করা হয়েছে */}
-
           <h1 style={{
-            fontSize: 'clamp(2.2rem, 12vw, 5.5rem)', // মোবাইলে ফন্ট সাইজ নিজে থেকেই ছোট হবে
+            fontSize: 'clamp(2.2rem, 12vw, 5.5rem)',
             margin: '0',
             fontWeight: '900',
             letterSpacing: '-1px',
@@ -45,9 +42,9 @@ export default function HomePage() {
           </h1>
 
           <p style={{
-            fontSize: 'clamp(0.8rem, 3vw, 1.2rem)', // এটিও রেসপনসিভ করা হয়েছে
+            fontSize: 'clamp(0.8rem, 3vw, 1.2rem)',
             color: '#ccc',
-            letterSpacing: '2px', // ৪ পিক্সেল থেকে কমিয়ে ২ করা হয়েছে যাতে মোবাইলে লেখা না ফেটে যায়
+            letterSpacing: '2px',
             textTransform: 'uppercase',
             marginTop: '15px'
           }}>
@@ -56,14 +53,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 2. THE ARTIST BIO (আগের মতোই রাখা হয়েছে) */}
+      {/* 2. THE ARTIST BIO */}
       <section style={{ padding: '100px 20px', maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '60px', alignItems: 'center' }}>
           <div style={{ flex: '1', minWidth: '300px' }}>
             <h2 style={{ fontSize: '2.5rem', color: gold, marginBottom: '20px' }}>The Artist</h2>
             <p style={{ fontSize: '1.2rem', lineHeight: '1.8', color: '#bbb' }}>
               A veteran legend of the stage, Gourinath Banerjee has dedicated his life to the arts since 1976.
-              As the founder of Theatre-Place, he has not only acted in countless roles but has also **directed more than 40 drama productions.
+              As the founder of Theatre-Place, he has not only acted in countless roles but has also directed more than 40 drama productions.
             </p>
             <div style={{ marginTop: '30px', borderLeft: `3px solid ${gold}`, paddingLeft: '20px' }}>
               <p style={{ fontStyle: 'italic', fontSize: '1.1rem', color: '#eee' }}>
@@ -90,9 +87,18 @@ export default function HomePage() {
         </div>
       </section >
 
-      {/* 3. CURRENT & NEXT PRODUCTION (অপরিবর্তিত) */}
-      < section style={{ backgroundColor: '#0a0a0a', padding: '80px 20px', textAlign: 'center' }
-      }>
+      {/* কাকার নতুন ইনস্ট্রাকশন: THEATRE-PLACE সেকশন (তোমার কোডের সাথে যোগ করা হলো) */}
+      <section style={{ padding: '60px 20px', textAlign: 'center', backgroundColor: '#000' }}>
+        <div style={{ maxWidth: '850px', margin: '0 auto', border: `1px solid ${gold}`, padding: '40px', borderRadius: '20px' }}>
+          <h2 style={{ color: gold, fontSize: '2.5rem', marginBottom: '15px', fontWeight: 'bold' }}>THEATRE-PLACE</h2>
+          <p style={{ fontSize: '1.1rem', color: '#ccc', lineHeight: '1.6' }}>
+            A legacy of creative excellence, nurturing theatrical talent and delivering powerful stage performances since 1976.
+          </p>
+        </div>
+      </section>
+
+      {/* 3. CURRENT & NEXT PRODUCTION */}
+      <section style={{ backgroundColor: '#0a0a0a', padding: '80px 20px', textAlign: 'center' }}>
         <h2 style={{ color: gold, fontSize: '2.5rem', marginBottom: '40px' }}>On Stage Now</h2>
         <div style={{
           maxWidth: '800px',
@@ -108,8 +114,8 @@ export default function HomePage() {
         </div >
       </section >
 
-      {/* 4. EXPERTISE GRID (অপরিবর্তিত) */}
-      < section style={{ backgroundColor: cardBg, padding: '100px 20px' }}>
+      {/* 4. EXPERTISE GRID */}
+      <section style={{ backgroundColor: cardBg, padding: '100px 20px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <h2 style={{ textAlign: 'center', fontSize: '2.5rem', marginBottom: '60px', color: gold }}>Core Expertise</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px' }}>
@@ -128,8 +134,8 @@ export default function HomePage() {
         </div>
       </section >
 
-      {/* 5. CALL TO ACTION (অপরিবর্তিত) */}
-      < section style={{ padding: '100px 20px', textAlign: 'center' }}>
+      {/* 5. CALL TO ACTION */}
+      <section style={{ padding: '100px 20px', textAlign: 'center' }}>
         <h2 style={{ fontSize: '2.5rem', marginBottom: '40px' }}>Experience The Magic Of Theatre</h2>
         <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
           <Link href="/works">
@@ -152,6 +158,19 @@ export default function HomePage() {
           </Link>
         </div >
       </section >
+
+      {/* কাকার নতুন ইনস্ট্রাকশন: ফুটার সেকশন */}
+      <footer style={{
+        padding: '60px 20px',
+        textAlign: 'center',
+        borderTop: '1px solid #222',
+        backgroundColor: '#000'
+      }}>
+        <h2 style={{ color: gold, fontSize: '1.8rem', marginBottom: '10px', fontWeight: 'bold' }}>THEATRE-PLACE</h2>
+        <p style={{ color: '#666', fontSize: '0.9rem' }}>
+          © 2025 Gourinath Banerjee. All Rights Reserved.
+        </p>
+      </footer>
 
     </main >
   );

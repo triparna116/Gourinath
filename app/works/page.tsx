@@ -1,7 +1,7 @@
 "use client";
 import { useState } from 'react';
 
-// ১. থিয়েটার প্রোডাকশন ডেটা
+// ১. থিয়েটার প্রোডাকশন ডেটা
 export const worksData = [
     {
         id: "4",
@@ -49,7 +49,7 @@ export const worksData = [
         synopsis: "This play explores the journey of greatest star of bengali cinema, Uttam Kumar, his struggles and his legendary rise to fame."
     },
     {
-        id: "4",
+        id: "4b", // ID unique করার জন্য 4b করা হয়েছে
         year: "1995",
         title: "BISHORJONER BADDI",
         direction: "Gourinath Bandyopadhyay",
@@ -134,7 +134,7 @@ export default function WorksPage() {
         <main style={{ backgroundColor: '#050505', color: '#fff', padding: '80px 15px', minHeight: '100vh', overflowX: 'hidden' }}>
             <h1 style={{ textAlign: 'center', color: gold, fontSize: '2.5rem', marginBottom: '40px' }}>Productions</h1>
 
-            {/* থিয়েটার সেকশন */}
+            {/* থিয়েটার সেকশন (Unchanged) */}
             <div style={{ maxWidth: '600px', margin: '0 auto 80px auto' }}>
                 {worksData.map((work) => (
                     <div key={work.id} onClick={() => toggleWork(work.id)} style={{ borderBottom: '1px solid #333', padding: '25px 0', cursor: 'pointer' }}>
@@ -157,20 +157,40 @@ export default function WorksPage() {
                 ))}
             </div>
 
-            {/* মুভি ও সিরিয়াল সেকশন */}
+            {/* মুভি ও সিরিয়াল সেকশন (Updated for Details) */}
             <h1 style={{ textAlign: 'center', color: gold, fontSize: '2.5rem', marginBottom: '40px' }}>Movies & Serials</h1>
             <div style={{ maxWidth: '600px', margin: '0 auto' }}>
                 <div style={{ border: '1px solid #333', borderRadius: '8px', overflow: 'hidden' }}>
                     {nonTheatreWorks.map((work) => (
-                        <div key={work.id} style={{ display: 'flex', justifyContent: 'space-between', padding: '20px', borderBottom: '1px solid #222', backgroundColor: '#0a0a0a' }}>
-                            <div style={{ flex: 1 }}>
-                                <h3 style={{ margin: '0 0 5px 0', color: '#fff', fontSize: '1.1rem' }}>{work.title}</h3>
-                                <span style={{ color: gold, fontSize: '0.85rem' }}>{work.type} | {work.year}</span>
+                        <div key={work.id} onClick={() => toggleWork(work.id)} style={{ cursor: 'pointer', borderBottom: '1px solid #222', backgroundColor: '#0a0a0a' }}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', padding: '20px' }}>
+                                <div style={{ flex: 1 }}>
+                                    <h3 style={{ margin: '0 0 5px 0', color: '#fff', fontSize: '1.1rem' }}>{work.title}</h3>
+                                    <span style={{ color: gold, fontSize: '0.85rem' }}>{work.type} | {work.year}</span>
+                                </div>
+                                <div style={{ flex: 1, textAlign: 'right' }}>
+                                    <span style={{ color: '#888', display: 'block', fontSize: '0.7rem' }}>ROLE</span>
+                                    <span style={{ color: '#eee' }}>{work.role}</span>
+                                    <span style={{ color: gold, marginLeft: '10px', fontSize: '0.8rem' }}>{openId === work.id ? '▲' : '▼'}</span>
+                                </div>
                             </div>
-                            <div style={{ flex: 1, textAlign: 'right' }}>
-                                <span style={{ color: '#888', display: 'block', fontSize: '0.7rem' }}>ROLE</span>
-                                <span style={{ color: '#eee' }}>{work.role}</span>
-                            </div>
+                            
+                            {/* মুভি ডিটেইলস অংশ */}
+                            {openId === work.id && (
+                                <div style={{ padding: '0 20px 20px 20px', backgroundColor: '#0f0f0f' }}>
+                                    <p style={{ 
+                                        color: '#ccc', 
+                                        fontSize: '0.9rem', 
+                                        lineHeight: '1.5', 
+                                        fontStyle: 'italic',
+                                        borderLeft: `2px solid ${gold}`,
+                                        paddingLeft: '12px',
+                                        marginTop: '5px'
+                                    }}>
+                                        {work.details}
+                                    </p>
+                                </div>
+                            )}
                         </div>
                     ))}
                 </div>

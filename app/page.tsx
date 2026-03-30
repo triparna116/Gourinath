@@ -159,6 +159,39 @@ export default function HomePage() {
         </div >
       </section >
 
+      {/* 6. ONLINE CLASSES SECTION */}
+      <section style={{ padding: '80px 20px', backgroundColor: '#0a0a0a', textAlign: 'center' }}>
+        <div style={{
+          maxWidth: '1000px',
+          margin: '0 auto',
+          padding: '50px 20px',
+          backgroundImage: 'linear-gradient(rgba(20,20,20,0.85), rgba(20,20,20,0.95)), url("https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&q=80&w=1000")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          borderRadius: '20px',
+          border: `1px solid ${gold}`
+        }}>
+          <h2 style={{ color: gold, fontSize: '2.5rem', marginBottom: '20px', fontWeight: 'bold' }}>Master Voice & Acting Online</h2>
+          <p style={{ color: '#eee', fontSize: '1.2rem', maxWidth: '750px', margin: '0 auto 35px auto', lineHeight: '1.6' }}>
+            Elevate your skills from anywhere! Enroll in our specialized Shruti-Natok, Voice-Modulation, and Script-Writing courses today.
+          </p>
+          <Link href="/online-classes">
+            <button style={{
+              backgroundColor: gold,
+              color: dark,
+              padding: '16px 45px',
+              fontSize: '1.2rem',
+              fontWeight: 'bold',
+              border: 'none',
+              borderRadius: '50px',
+              cursor: 'pointer'
+            }}>
+              EXPLORE CLASSES
+            </button>
+          </Link>
+        </div>
+      </section>
+
       {/* কাকার নতুন ইনস্ট্রাকশন: ফুটার সেকশন */}
       <footer style={{
         padding: '60px 20px',

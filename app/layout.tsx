@@ -14,13 +14,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// উন্নত মেটাডেটা: Geo-elements এবং Canonical URL যোগ করা হয়েছে
+
 export const metadata: Metadata = {
   title: "Gourinath Banerjee | Legend of Bengali Theatre | Theatre-Place",
   description: "Official website of veteran theatre director Gourinath Banerjee. Exploring 40+ years of Bengali drama since 1976.",
   keywords: ["Gourinath Banerjee", "Theatre-Place", "Bengali Theatre", "Drama Director West Bengal", "Indian Theatre Actor"],
   alternates: {
-    canonical: 'http://localhost:3000', // লাইভ হলে আপনার ডোমেইন দেবেন
+    canonical: 'http://localhost:3000', 
   },
   openGraph: {
     title: "Gourinath Banerjee | Theatre-Place",
@@ -30,8 +30,7 @@ export const metadata: Metadata = {
     images: [{ url: "/og-image.jpg" }],
     type: "website",
   },
-  // Geo-tags এআই বটের জন্য
-  other: {
+   other: {
     "geo.region": "IN-WB",
     "geo.placename": "Kolkata",
     "geo.position": "22.5726;88.3639",

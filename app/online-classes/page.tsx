@@ -57,6 +57,15 @@ export default function OnlineClassesPage() {
       width: '100%',
       overflowX: 'hidden'
     }}>
+      <style>{`
+        .join-now-btn:hover {
+          opacity: 0.8 !important;
+          transform: translateY(-2px);
+        }
+        .join-now-btn {
+          transition: all 0.2s ease-in-out !important;
+        }
+      `}</style>
 
       {/* HEADER SECTION */}
       <section style={{
@@ -163,6 +172,7 @@ export default function OnlineClassesPage() {
                       href={getWhatsAppLink(sec.title, pkg.name)}
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="join-now-btn"
                       style={{
                         display: 'block',
                         textAlign: 'center',
@@ -175,8 +185,6 @@ export default function OnlineClassesPage() {
                         fontSize: '1.1rem',
                         transition: 'opacity 0.2s',
                       }}
-                      onMouseOver={(e) => e.currentTarget.style.opacity = '0.9'}
-                      onMouseOut={(e) => e.currentTarget.style.opacity = '1'}
                     >
                       JOIN NOW
                     </a>

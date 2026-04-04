@@ -55,7 +55,7 @@ export default function AdminDashboard() {
         <div>
           <h2 style={{ fontSize: '1.5rem', borderBottom: '1px solid #333', paddingBottom: '10px', marginBottom: '20px' }}>Recent Class Bookings</h2>
           {bookings.map((b: any) => {
-            const slotDetails = slots.find((s:any) => s.id === b.slotId);
+            const slotDetails = (slots as any[]).find((s:any) => s.id === b.slotId);
             return (
               <div key={b.id} style={{ backgroundColor: '#111', padding: '15px', borderRadius: '10px', marginBottom: '15px', border: '1px solid #333' }}>
                 <h4 style={{ color: '#FFB100', margin: 0 }}>User: {b.userId}</h4>

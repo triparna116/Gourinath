@@ -41,6 +41,7 @@ export default function Navbar() {
                 <Link href="/about" style={linkStyle}>ABOUT</Link>
                 <Link href="/works" style={linkStyle}>WORKS</Link>
                 <Link href="/drama-group" style={linkStyle}>GROUP</Link>
+                <Link href="/online-classes" style={linkStyle}>COURSES</Link>
                 <Link href="/contact" style={{
                     ...linkStyle,
                     border: `1px solid ${gold}`,

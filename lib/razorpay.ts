@@ -1,0 +1,14 @@
+import Razorpay from 'razorpay';
+
+export const razorpay = new Proxy({} as any, {
+  get: (target, prop) => {
+    if (!process.env.RAZORPAY_KEY_ID || !process.env.RAZORPAY_KEY_SECRET) {
+      throw new Error("Missing RAZORPAY_KEY_ID or RAZORPAY_KEY_SECRET in .env.local");
+    }
+    const rzp = new Razorpay({
+      key_id: process.env.RAZORPAY_KEY_ID,
+      key_secret: process.env.RAZORPAY_KEY_SECRET,
+    });
+    return rzp[prop as keyof Razorpay];
+  }
+});

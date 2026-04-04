@@ -1,0 +1,82 @@
+{
+  "orders": [
+    {
+      "id": "order_SZVKSEm3j19BTz",
+      "orderId": "order_SZVKSEm3j19BTz",
+      "name": "triparna banerjee",
+      "email": "triparna2003@gmail.com",
+      "phone": "6289233933",
+      "packageId": "sn-3",
+      "amount": "4000",
+      "totalClasses": 8,
+      "status": "confirm",
+      "createdAt": "2026-04-04T17:50:54.977Z",
+      "paymentId": "pay_SZVRYt6NlILpFw",
+      "updatedAt": "2026-04-04T17:57:59.549Z"
+    },
+    {
+      "id": "order_SZVSrfZg57FwEH",
+      "orderId": "order_SZVSrfZg57FwEH",
+      "name": "triparna banerjee",
+      "email": "triparna2003@gmail.com",
+      "phone": "6289233933",
+      "packageId": "sn-3",
+      "amount": "4000",
+      "totalClasses": 8,
+      "status": "confirm",
+      "createdAt": "2026-04-04T17:58:52.683Z",
+      "paymentId": "pay_SZVTUBfKBFToGH",
+      "updatedAt": "2026-04-04T17:59:43.673Z"
+    },
+    {
+      "id": "order_SZVfzGggJTiBTp",
+      "orderId": "order_SZVfzGggJTiBTp",
+      "name": "triparna banerjee",
+      "email": "triparna2003@gmail.com",
+      "phone": "6289233933",
+      "packageId": "sn-3",
+      "amount": "4000",
+      "totalClasses": 8,
+      "status": "confirm",
+      "createdAt": "2026-04-04T18:11:18.020Z",
+      "paymentId": "pay_SZVgsfNQV1DQm9",
+      "updatedAt": "2026-04-04T18:12:25.209Z",
+      "classesBooked": 1
+    }
+  ],
+  "slots": [
+    {
+      "id": "slot_01",
+      "date": "2026-04-10T10:00:00.000Z",
+      "time": "10:00 AM",
+      "maxCapacity": 5,
+      "currentCapacity": 0,
+      "createdAt": "2026-04-04T12:00:00.000Z"
+    },
+    {
+      "id": "slot_02",
+      "date": "2026-04-12T14:30:00.000Z",
+      "time": "2:30 PM",
+      "maxCapacity": 10,
+      "currentCapacity": 3,
+      "createdAt": "2026-04-04T12:00:00.000Z"
+    },
+    {
+      "id": "doc_1775327444994",
+      "date": "2026-04-05T00:00:00.000Z",
+      "time": "10:00 AM",
+      "maxCapacity": 1,
+      "currentCapacity": 0,
+      "createdAt": "2026-04-04T18:30:44.994Z"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "doc_1775327058239",
+      "orderId": "order_SZVfzGggJTiBTp",
+      "slotId": "slot_02",
+      "userId": "triparna2003@gmail.com",
+      "createdAt": "2026-04-04T18:24:18.239Z"
+    }
+  ]
+}

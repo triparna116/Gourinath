@@ -1,11 +1,8 @@
 import type { NextConfig } from "next";
-import path from "path";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  turbopack: {
-    root: process.cwd(),
-  },
+  // Remove turbopack for better deployment compatibility
+  output: 'standalone', // Better for containerized deployments
 };
 
 export default nextConfig;

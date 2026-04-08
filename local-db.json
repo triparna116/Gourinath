@@ -26,7 +26,8 @@
       "status": "confirm",
       "createdAt": "2026-04-04T17:58:52.683Z",
       "paymentId": "pay_SZVTUBfKBFToGH",
-      "updatedAt": "2026-04-04T17:59:43.673Z"
+      "updatedAt": "2026-04-04T17:59:43.673Z",
+      "classesBooked": 3
     },
     {
       "id": "order_SZVfzGggJTiBTp",
@@ -42,6 +43,60 @@
       "paymentId": "pay_SZVgsfNQV1DQm9",
       "updatedAt": "2026-04-04T18:12:25.209Z",
       "classesBooked": 1
+    },
+    {
+      "id": "order_SZWU8sIi4rajvt",
+      "orderId": "order_SZWU8sIi4rajvt",
+      "name": "triparna banerjee",
+      "email": "triparna2003@gmail.com",
+      "phone": "6289233933",
+      "packageId": "sn-2",
+      "amount": "1500",
+      "totalClasses": 12,
+      "status": "confirm",
+      "createdAt": "2026-04-04T18:58:46.836Z",
+      "paymentId": "pay_SZWUZ9vmKlhAW2",
+      "updatedAt": "2026-04-04T18:59:26.556Z"
+    },
+    {
+      "id": "order_SZWfbUFX6jObeQ",
+      "orderId": "order_SZWfbUFX6jObeQ",
+      "name": "triparna banerjee",
+      "email": "triparna2003@gmail.com",
+      "phone": "6289233933",
+      "packageId": "sn-3",
+      "amount": "4000",
+      "totalClasses": 8,
+      "status": "confirm",
+      "createdAt": "2026-04-04T19:09:37.289Z",
+      "paymentId": "pay_SZWgi4X36jGD9H",
+      "updatedAt": "2026-04-04T19:10:56.739Z"
+    },
+    {
+      "id": "order_SZWtYJmfFAER9t",
+      "orderId": "order_SZWtYJmfFAER9t",
+      "name": "triparna banerjee",
+      "email": "triparna2003@gmail.com",
+      "phone": "6289233933",
+      "packageId": "sn-3",
+      "amount": "4000",
+      "totalClasses": 8,
+      "status": "confirm",
+      "createdAt": "2026-04-04T19:22:49.589Z",
+      "paymentId": "pay_SZWth5wY0tggjt",
+      "updatedAt": "2026-04-04T19:23:17.687Z"
+    },
+    {
+      "id": "order_Sa3eXwJfYYzwib",
+      "orderId": "order_Sa3eXwJfYYzwib",
+      "name": "Test",
+      "email": "test@example.com",
+      "phone": "1234567890",
+      "packageId": "test",
+      "amount": 100,
+      "totalClasses": 1,
+      "status": "init",
+      "createdAt": "2026-04-06T03:25:29.477Z"
     }
   ],
   "slots": [
@@ -50,7 +105,7 @@
       "date": "2026-04-10T10:00:00.000Z",
       "time": "10:00 AM",
       "maxCapacity": 5,
-      "currentCapacity": 0,
+      "currentCapacity": 1,
       "createdAt": "2026-04-04T12:00:00.000Z"
     },
     {
@@ -58,16 +113,16 @@
       "date": "2026-04-12T14:30:00.000Z",
       "time": "2:30 PM",
       "maxCapacity": 10,
-      "currentCapacity": 3,
+      "currentCapacity": 4,
       "createdAt": "2026-04-04T12:00:00.000Z"
     },
     {
-      "id": "doc_1775327444994",
+      "id": "doc_1775330817301",
       "date": "2026-04-05T00:00:00.000Z",
-      "time": "10:00 AM",
+      "time": "10 A.M.",
       "maxCapacity": 1,
       "currentCapacity": 0,
-      "createdAt": "2026-04-04T18:30:44.994Z"
+      "createdAt": "2026-04-04T19:26:57.301Z"
     }
   ],
   "bookings": [
@@ -77,6 +132,27 @@
       "slotId": "slot_02",
       "userId": "triparna2003@gmail.com",
       "createdAt": "2026-04-04T18:24:18.239Z"
+    },
+    {
+      "id": "doc_1775329183094",
+      "orderId": "order_SZVSrfZg57FwEH",
+      "slotId": "doc_1775327444994",
+      "userId": "triparna2003@gmail.com",
+      "createdAt": "2026-04-04T18:59:43.094Z"
+    },
+    {
+      "id": "doc_1775329876372",
+      "orderId": "order_SZVSrfZg57FwEH",
+      "slotId": "slot_02",
+      "userId": "triparna2003@gmail.com",
+      "createdAt": "2026-04-04T19:11:16.372Z"
+    },
+    {
+      "id": "doc_1775330631396",
+      "orderId": "order_SZVSrfZg57FwEH",
+      "slotId": "slot_01",
+      "userId": "triparna2003@gmail.com",
+      "createdAt": "2026-04-04T19:23:51.396Z"
     }
   ]
 }
